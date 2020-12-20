@@ -1,0 +1,35 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+
+.submit-btn {
+  background: $green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  height: 4rem;
+  font-family: $font-poppins;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+
+.submit-form {
+  border-radius: 5px;
+}
+
+#terms-of-condition {
+  color: $grayish-blue;
+}
+
+#terms-of-condition span {
+  color: $red;
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+@import "./colors.scss";
+@import "./fonts.scss";
+
+html {
+  background-color: $red;
+  background-image: url("../images/bg-intro-mobile.png");
+}
+
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  height: unset;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.service, .submit-form-container  {
+  font-family: $font-poppins;
+}
+
+.service {
+  padding: 0 3rem;
+}
+
+.submit-form-container {
+  padding: 0 3rem;
+}
+
+@media (min-width: 1025px) {
+  .App {
+    flex-direction: row;
+    padding: 5rem 0;
+  }
+
+  .service, .submit-form-container  {
+    align-self: center;
+    width: 50%;
+  }
+
+  .service {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+  }
+}

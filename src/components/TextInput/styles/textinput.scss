@@ -1,0 +1,47 @@
+@import '../../../styles/colors';
+@import "../../../styles/fonts.scss";
+
+.input-error-container {
+  margin-bottom: 1.5rem;
+}
+
+.input-container {
+  border: 1px solid $grayish-blue;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+input {
+  border: none;
+  font-family: $font-poppins;
+  font-weight: 600;
+  height: 2rem;
+  margin: 10px 0;
+  outline: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.error {
+  position: relative;
+}
+
+.error-image {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+.input-container.error{
+  border: 1px solid $red;
+}
+
+.error .text-input {
+  color: $red;
+}
+
+.error-submit-message {
+  color: $red;
+  margin-left: auto;
+  text-align: right;
+}
